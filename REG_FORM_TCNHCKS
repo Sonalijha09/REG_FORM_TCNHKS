@@ -1,0 +1,103 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>
+.container{  
+  padding:80px;  
+  background-color:white;  
+}  
+input[type=text], input[type=password], textarea{  
+  width:100%;
+  padding:5px;
+  margin:5px 0 20px 0; 
+  display:inline-block;
+  border:2px solid black;
+  background:white;  
+}
+.registerbtn{  
+  background-color:green;  
+  color:white;
+  padding:10px 10px;
+  margin:10px 0;  
+  border:2px solid black;  
+  cursor:pointer;  
+  width:100%;  
+}  
+.registerbtn:hover{  
+  font-size:10px;  
+}   
+</style>  
+</head>  
+<body>  
+<form>  
+<div class="container">  
+<center><h1>DRIVING LICENSE REGISTRATION FORM</h1> </center>  
+<hr>  
+<label>Name</label>   
+<input type="text" name="Firstname" placeholder= "Firstname"/>   
+<input type="text" name="Lastname" placeholder="Lastname"/>   
+<div>  
+<label>   
+Country:  
+</label>   
+<select>  
+<option value="Country">select</option>  
+<option value="INDIA">INDIA</option>  
+</select>  
+</div> 
+<div>  
+<label>   
+Gender:  
+</label><br>  
+<input type="radio" value="Male" name="Gender">Male   
+<input type="radio" value="Female" name="gender">Female   
+<input type="radio" value="Other" name="gender">Other 
+<input type="radio" value="Prefer not to answer" name="gender">Prefer not to answer
+</div>  
+<div>  
+<label>   
+Applying for:  
+</label>   
+<select>
+<option value="Applying for">select</option>  
+<option value="Driving License">Driving License</option>  
+<option value="Learning Permit">Learning Permit</option>  
+</select>  
+</div>  
+<label>
+Purpose:
+</label><br>
+<input type="checkbox">NEW
+<input type="checkbox">CHANGE TYPE
+<input type="checkbox">RENEW
+<input type="checkbox">UPDATE INFO
+<input type="checkbox">TRANSFER
+</div>
+<label>
+Mobile Number:  
+</label>
+<input type="text" name="Mobile Number" placeholder="0000000000"> 
+<label>
+Date of Birth:  
+</label>
+<input type="text" name="dob" placeholder="dd-mm-yyyy">
+<div>  
+<label>   
+Are you older than 18?:  
+</label><br>  
+<input type="radio" value="Yes" name="age">Yes   
+<input type="radio" value="No" name="age">No
+</div> 
+Address:  
+<textarea cols="50" rows="2" placeholder="Address" value="address" required>  
+</textarea>  
+<label for="email"><b>Email</b></label>  
+<input type="text" placeholder="example@gmail.com" name="email" required>  
+<label for="Password"><b>Password</b></label>  
+<input type="password" placeholder="Enter Password" name="Password" required>  
+<label for="Password-repeat"><b>Confirm Password</b></label>  
+<input type="password" placeholder="Confirm Password" name="password repeat" required>  
+<button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>
